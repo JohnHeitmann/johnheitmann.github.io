@@ -1,26 +1,43 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
     <head>
         <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
         <title>crypto-bench Results</title>
-        <link rel="stylesheet" href="css/normalize.css">
+
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+        <link href="css/bench.css" rel="stylesheet">
     </head>
-    <body style="padding: 20px">
-        <h1>crypto-bench Results</h1>
+    <body>
 
-        <p>Units are average nanoseconds per iteration. Lower is better. Click the legend to disable a result set.</p>
+        <nav class="navbar navbar-inverse navbar-fixed-top">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="#">crypto-bench Results</a>
+                </div>
+                <div id="navbar" class="navbar-collapse collapse">
+                    <div id="mode-select-container"></div>
+                </div>
+            </div>
+        </nav>
 
-        <div id="content"></div>
-        
-        <div id="fetch-failure"></div>
-        <div id="data-view" style="float:left"></div>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-sm-10 col-sm-offset-1 col-md-10 col-md-offset-1 main">
+                    <div id="content"></div>
+                    <div id="fetch-failure"></div>
+                </div>
+            </div>
+        </div>
 
-        <script src="js/fetch/fetch.js"></script>
-        <script src="js/Chart.js"></script>
-        <script src="js/underscore.js"></script>
-        <script src="js/react.js"></script>
-        <script src="js/react-dom.js"></script>
-        <script src="js/main.js"></script>
+        <script src="app.bundle.js"></script>
     </body>
 </html>
-
