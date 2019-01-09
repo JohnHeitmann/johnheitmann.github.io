@@ -45,7 +45,7 @@ let best_target_index = targets.iter().enumerate()
     .map(|(i, _)| i);
 {% endhighlight %}
 
-The lever applied here is that all Rust tuples implement Ordering if every element also implements Ordering (and the same is true for tuples regarding most other common traits like Clone, Copy, Eq, and Hash): https://doc.rust-lang.org/std/primitive.tuple.html#trait-implementations . The `max_by_key` line contains all you need to know about the max calculation in one line, rather than spread it out across 20 nested if statements. In the tuple ordering solution, every line except the last directly expresses a high level rule of the problem. In my original solution 90% of the lines are busywork that are a pain to write, and which obscure the rules.
+The lever applied here is that all Rust tuples implement Ordering if every element also implements Ordering, and [the same is true](https://doc.rust-lang.org/std/primitive.tuple.html#trait-implementations) for tuples regarding most other common traits like `Clone`, `Copy`, `Eq`, and `Hash`. The `max_by_key` line contains all you need to know about the max calculation in one line, rather than spread it out across 20 nested if statements. In the tuple ordering solution, every line except the last directly expresses a high level rule of the problem. In my original solution 90% of the lines are busywork that are a pain to write, and which obscure the rules.
 
  There is a small semantic difference to note. The tuple will be eagerly evaluated, while the nested conditionals will be lazily evaluated. In my example this wasn't a problem since the secondary sort keys required no computation, however in more extreme cases this may be a performance regression.
 
