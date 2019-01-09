@@ -51,6 +51,7 @@ The lever applied here is that all Rust tuples implement Ordering if every eleme
 
 When a loop can be written with roughly the same weight of code in imperative or functional style, I tend to write in the imperative style. However, this is a clear case where the functional style wins by a mile.
 
+Comment on [Reddit](https://www.reddit.com/r/rust/comments/aeb79m/rust_tips_from_advent_of_code_1/).
 
 [aoc-2018]: https://adventofcode.com/2018
 [day-24]: https://adventofcode.com/2018/day/24
