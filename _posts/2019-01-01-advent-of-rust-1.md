@@ -5,7 +5,7 @@ date:   2019-01-01 17:24:00 -0800
 categories: rust
 ---
 
-As a Rust beginner, the 2018 [Advent of Code][aoc-2018] was a great chance to learn the language, both by doing the exercises solo, and then by comparing to other Rust solutions. Here are a few tips I picked up this year.
+As somewhat of a Rust beginner, the 2018 [Advent of Code][aoc-2018] was a great chance to learn the language, both by doing the exercises solo, and then by comparing to other Rust solutions. Here are a few tips I picked up this year.
 
 Simple Tiered Comparison
 ==========================
